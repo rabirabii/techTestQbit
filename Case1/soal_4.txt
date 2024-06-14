@@ -1,0 +1,5 @@
+
+Masalah yang saya lihat Dalam daftar Array fruits dari Case 1 itu terdapat duplikasi ID, Nama buah yang tidak konsisten seperti "Apel" dan "apel" , "Kurma" dan "KURMA".
+Masalah ini dapat membuat data kita menjadi tidak konsisten,sulit dikelola, dan sulit untuk relevan dalam penggunaannya.
+Dalam contoh kasus misalnya saya ingin mengambil data buah dengan nilai ID 5 , ternyata ada beberapa buah yang memiliki id yang bernilai 5 . ini akan membuat data yang saya ingin ambil jadi tidak sesuai yang keinginan.
+untuk mengatasi masalah ini, kita perlu mengubah array fruits dengan menghapus duplikasi ID, dan melakukan normalisasi penulisan nama buah. Misalnya jadi huruf kecil atau huruf besar untuk membuat penulisan jadi lebih konsisten
