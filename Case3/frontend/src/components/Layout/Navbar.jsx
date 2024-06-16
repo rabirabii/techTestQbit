@@ -20,14 +20,14 @@ const Navbar = () => {
     >
       <div className="px-4 mx-auto mt-1 sm:px-6 lg:px xl:px-12">
         <div className="flex items-center justify-between h-16 lg:h-[64px]">
-          <div className="flex items-center flex-shrink-0 ">
+          <div className="flex items-center flex-shrink-0 lg:space-x-2">
             <Link to="/">
               <h1 className="text-lg font-bold transition-all duration-200 hover:text-gray-800 hover:text-xl md:mx-2 px-2">
                 Mlatiwangi
               </h1>
               <span className="sr-only">Logo</span>
             </Link>
-            <div className="lg:hidden">
+            <div className="lg:hidden ml-8">
               <Cart />
             </div>
           </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
               All Products
             </Link>
             <Link
-              to="#"
+              to="/about"
               title="About"
               className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
             >
@@ -54,10 +54,9 @@ const Navbar = () => {
             >
               FAQ
             </Link>
-          </div>
-          <div className="hidden lg:flex lg:items-center lg:ml-6">
             <Cart />
           </div>
+
           <div className="flex items-center justify-end ml-auto">
             <div className="hidden lg:flex lg:items-center lg:space-x-8">
               <Link
@@ -73,8 +72,6 @@ const Navbar = () => {
                 Login
               </Link>
             </div>
-
-            {/* Cart Component */}
 
             {/* Mobile Menu */}
             <div className="flex items-center justify-end space-x-5 lg:hidden">
@@ -94,7 +91,7 @@ const Navbar = () => {
                   style={{ width: "50%" }}
                 >
                   <div
-                    className="flex-grow flex flex-col items-start justify-center space-y-8 mt-2 ml-2"
+                    className="flex-grow flex flex-col items-start justify-center space-y-8 mt-12 ml-2"
                     style={{ height: "32%" }}
                   >
                     <Link
@@ -102,36 +99,21 @@ const Navbar = () => {
                       title="All Books"
                       className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                     >
-                      All Books
+                      All Products
+                    </Link>
+                    <Link
+                      to="/about"
+                      title="About"
+                      className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    >
+                      About
                     </Link>
                     <Link
                       to="#"
-                      title="About Us"
-                      className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                      onClick={toggleMenu}
-                    >
-                      About Us
-                    </Link>
-                    <Link
-                      to="#"
-                      title="Services"
+                      title="FAQ"
                       className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                     >
-                      Services
-                    </Link>
-                    <Link
-                      to="#"
-                      title="Pricing"
-                      className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    >
-                      Pricing
-                    </Link>
-                    <Link
-                      to="#"
-                      title="Contact"
-                      className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    >
-                      Contact
+                      FAQ
                     </Link>
                   </div>
                   {/* Bottom Buttons */}
@@ -148,13 +130,10 @@ const Navbar = () => {
                     >
                       Sign Up
                     </Link>
-                    <div className="text-xs text-gray-500">
-                      Copyright © 2021
-                    </div>
+                    <div className="text-xs text-gray-500">Made by Wahyu</div>
                   </div>
                 </div>
               </div>
-              {/* Mobile Cart Component */}
             </div>
           </div>
         </div>
