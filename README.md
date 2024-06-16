@@ -1,1 +1,5 @@
 ![Screenshot Aplikasi](https://github.com/rabirabii/techTestQbit/blob/master/About.jpg)
+![Screenshot Aplikasi](https://github.com/rabirabii/techTestQbit/blob/master/homepage.jpg)
+![Screenshot Aplikasi](https://github.com/rabirabii/techTestQbit/blob/master/Product.jpg)
+![Screenshot Aplikasi](https://github.com/rabirabii/techTestQbit/blob/master/ProductDetails.jpg)
+![Screenshot Aplikasi](https://github.com/rabirabii/techTestQbit/blob/master/CartSheet.jpg)
